@@ -4,13 +4,13 @@
     <test name="New feature" >
         <parameter name="correct answer for q2" value="8"></parameter>
         <classes>
-            <class name="FieldSecondQuestionTest" />
+            <class name="HW_1_Tests.FieldSecondQuestionTest" />
         </classes>
     </test>
 
     <test name="Regression1">
         <classes>
-            <class name="FieldFirstQuestionTest"/>
+            <class name="HW_1_Tests.FieldFirstQuestionTest"/>
         </classes>
     </test>
 </suite>

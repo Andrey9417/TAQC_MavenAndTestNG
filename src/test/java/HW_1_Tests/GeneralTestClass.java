@@ -1,3 +1,5 @@
+package HW_1_Tests;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;

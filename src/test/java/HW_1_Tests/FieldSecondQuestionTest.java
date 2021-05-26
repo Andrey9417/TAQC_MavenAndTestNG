@@ -1,3 +1,6 @@
+package HW_1_Tests;
+
+import HW_FirstTests.FieldSecondQuestion;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;

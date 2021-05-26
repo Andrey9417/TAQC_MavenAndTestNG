@@ -3,7 +3,7 @@
 <suite name="Suite1" >
   <test name="FirstTest" >
     <classes>
-       <class name="FieldFirstQuestionTest" />
+       <class name="TestGuruLogin" />
     </classes>
   </test>
 </suite>

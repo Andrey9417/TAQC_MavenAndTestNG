@@ -1,3 +1,6 @@
+package HW_1_Tests;
+
+import HW_FirstTests.FieldFirstQuestion;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
