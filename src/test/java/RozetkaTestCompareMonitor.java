@@ -55,8 +55,8 @@ public class RozetkaTestCompareMonitor {
     @Test
     public void test(){
 
-        WebElement mainMenu = driver.findElement(By.xpath("//sidebar-fat-menu//a[contains (@href, 'computers-notebooks')]"));
-        actions.moveToElement(mainMenu).perform();
+        WebElement linkComputersAndNotebooks = driver.findElement(By.xpath("//sidebar-fat-menu//a[contains (@href, 'computers-notebooks')]"));
+        actions.moveToElement(linkComputersAndNotebooks).perform();
         wait.until(visibilityOfElementLocated(By.xpath("//div[@class='menu__main-cats']//a[contains (@href, 'monitors')]"))).click();
 
         wait.until(visibilityOfElementLocated(By.xpath("//div[@class='goods-tile__inner']")));
