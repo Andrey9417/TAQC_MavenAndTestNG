@@ -3,7 +3,7 @@
 <suite name="Suite1" >
   <test name="FirstTest" >
     <classes>
-       <class name="TestGuruLogin" />
+       <class name="Rozetka_Google_Guru_Tests.TestGuruLogin" />
     </classes>
   </test>
 </suite>

@@ -3,12 +3,12 @@
 <suite name="Rozetka" >
     <test name="Comparing products" >
         <classes>
-            <class name="RozetkaTestCompareMonitor" />
+            <class name="Rozetka_Google_Guru_Tests.RozetkaTestCompareMonitor" />
         </classes>
     </test>
     <test name="Filters" >
         <classes>
-            <class name="RozetkaTestFilters" />
+            <class name="Rozetka_Google_Guru_Tests.RozetkaTestFilters" />
         </classes>
     </test>
 </suite>

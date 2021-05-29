@@ -1,3 +1,5 @@
+package Rozetka_Google_Guru_Tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +17,7 @@ import org.testng.annotations.Test;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
@@ -41,6 +44,7 @@ public class RozetkaTestCompareMonitor {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
         actions = new Actions(driver);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
@@ -52,6 +56,7 @@ public class RozetkaTestCompareMonitor {
     public void navigateToSite(){
         driver.get(initialUrl);
     }
+
     @Test
     public void test(){
 
