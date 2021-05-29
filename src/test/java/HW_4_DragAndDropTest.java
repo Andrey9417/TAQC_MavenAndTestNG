@@ -21,7 +21,7 @@ public class HW_4_DragAndDropTest {
 
     @AfterClass
     public void closeBrowser(){
-        driver.close();
+        driver.quit();
     }
 
     @BeforeMethod

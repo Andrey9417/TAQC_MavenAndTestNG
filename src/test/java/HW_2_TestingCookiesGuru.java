@@ -30,7 +30,7 @@ public class HW_2_TestingCookiesGuru {
 
     @AfterClass
     public void closeBrowser(){
-        driver.close();
+        driver.quit();
     }
 
     @BeforeMethod
