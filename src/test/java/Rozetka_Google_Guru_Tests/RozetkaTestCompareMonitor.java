@@ -53,9 +53,7 @@ public class RozetkaTestCompareMonitor {
     }
 
     @BeforeMethod
-    public void navigateToSite(){
-        driver.get(initialUrl);
-    }
+    public void navigateToSite(){ driver.get(initialUrl); }
 
     @Test
     public void test(){
