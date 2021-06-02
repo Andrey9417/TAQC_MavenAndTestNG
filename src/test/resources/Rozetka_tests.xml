@@ -3,7 +3,7 @@
 <suite name="Rozetka" >
     <test name="Comparing products" >
         <classes>
-            <class name="Rozetka_Google_Guru_Tests.RozetkaTestCompareMonitor" />
+            <class name="Rozetka_Google_Guru_Tests.RozetkaCompareMonitorPageTest" />
         </classes>
     </test>
     <test name="Filters" >
