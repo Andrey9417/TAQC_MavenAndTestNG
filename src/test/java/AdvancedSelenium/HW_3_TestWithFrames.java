@@ -47,15 +47,9 @@ public class HW_3_TestWithFrames {
     public void test(){
         int number = driver.findElements(By.tagName("iframe")).size();
         System.out.println(number);
-        Point outside = driver.findElement(By.cssSelector("div.module-surround>h2")).getLocation();
-        Point inside = driver.findElement(By.cssSelector("hr+h3")).getLocation();
         driver.switchTo().frame(0);
         driver.findElement(By.cssSelector(".ytp-large-play-button")).click();
         WebElement playButton = driver.findElement(By.cssSelector(".ytp-play-button"));
-
-        System.out.println(playButton.getLocation().getX());
-        System.out.println(playButton.getLocation().getY());
-        System.out.println(outside+"\n\n"+inside);
         Assert.assertTrue(playButton.isDisplayed());
         for(int i = 0; i<3; i++) {
             robot.mouseMove(500, 500);
