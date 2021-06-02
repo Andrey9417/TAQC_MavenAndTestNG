@@ -15,7 +15,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.sql.Time;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class RozetkaTestFilters {
 
@@ -30,6 +32,7 @@ public class RozetkaTestFilters {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 15);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
@@ -46,9 +49,9 @@ public class RozetkaTestFilters {
     public void test1FilterByManufacturer(){
 
         driver.findElement(By.name("search")).sendKeys("samsung" + Keys.ENTER);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a/span[text()='Мобильные телефоны']")));
-        driver.findElement(By.xpath("//a/span[text()='Мобильные телефоны']")).click();
+        //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("li>a[href*=mobile-phones]")))).click();
 
+        driver.findElement(By.cssSelector("li>a[href*=mobile-phones]")).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("label[for=Apple]"))).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("label[for=Huawei]"))).click();
 

@@ -12,6 +12,7 @@ public class SearchPage {
     By productOnSearchPage = By.xpath("//div[@class='goods-tile__inner']");
     By priceOfProduct = By.xpath(".//span[@class='goods-tile__price-value']");
     By linkToProductPage = By.xpath(".//a");
+    //By categoryName = By.cssSelector("li>a[href*=mobile-phones]");
 
     public SearchPage (WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -35,5 +36,9 @@ public class SearchPage {
     }
     private void moveToProductsPage(WebElement product){
         product.findElement(linkToProductPage).click();
+    }
+
+    public void chooseProductCategory(String category){
+        webDriver.findElement(By.cssSelector("li>a[href*="+category+"]")).click();
     }
 }
